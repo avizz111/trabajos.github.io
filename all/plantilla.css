@@ -1,0 +1,73 @@
+body{
+    background: #000000;
+    text-align: center;
+}
+
+h2{
+    animation: linea 5s infinite 2s;
+    padding-top: 50px;
+    color: #000000;
+    margin-top: 50px;
+}
+
+ol,dl{
+    display: inline-block;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-align: left;
+    background-color: #91415b;
+    transition: all 2s;
+}
+
+ol:hover, dl:hover{
+    background-color: #ff0055;
+}
+
+h1 {
+    color: #000000;
+    position: relative;
+    animation: sombra 5s infinite;
+}
+
+@keyframes linea{
+    0%,100%{
+        border-top: #f00 solid 5px;
+        text-shadow: #f00 0 0 30px;
+    }
+    20%{
+        border-top: rgb(255, 94, 0) solid 5px;
+        text-shadow: rgb(255, 94, 0) 0 0 30px;
+    }
+    40%{
+        border-top: #ff0 solid 5px;
+        text-shadow: #ff0 0 0 30px;
+    }
+    60%{
+        border-top: #0f0 solid 5px;
+        text-shadow: #0f0 0 0 30px;
+    }
+    80%{
+        border-top: #00f solid 5px;
+        text-shadow: #00f 0 0 30px;
+    }
+
+}
+
+@keyframes sombra{
+    0%,100%{
+        text-shadow: #f00 0 0 30px;
+    }
+    20%{
+        text-shadow: rgb(255, 94, 0) 0 0 30px;
+    }
+    40%{
+        text-shadow: #ff0 0 0 30px;
+    }
+    60%{
+        text-shadow: #0f0 0 0 30px;
+    }
+    80%{
+        text-shadow: #00f 0 0 30px;
+    }
+}

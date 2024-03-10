@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <link rel="icon" type="icon/png" href="https://th.bing.com/th/id/R.c5b34048e09f0630a8ae338f6ffa722e?rik=X3X5LH%2b0N7I92A&pid=ImgRaw&r=0">
+    <link rel="stylesheet" href="08-03-2024.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script>
+        var carrera_sel
+
+        const subir = () =>{
+            alert(`Felicidades por haber elegido la carrera de ${carrera_sel}`)
+        }
+        
+        const seleccionar = (sel) =>{
+            if (sel == 'lab') {
+                lab_ambi.style.color = "#0f0"
+                progra.style.color = "#f00"
+                vid_sal.style.color = "#f00"
+                carrera_sel="Laboratorista Ambiental"
+            }else if (sel == 'prog') {
+                lab_ambi.style.color = "#f00"
+                progra.style.color = "#0f0"
+                vid_sal.style.color = "#f00"
+                carrera_sel="Programación"
+            }else if (sel == 'vid') {
+                lab_ambi.style.color = "#f00"
+                progra.style.color = "#f00"
+                vid_sal.style.color = "#0f0"
+                carrera_sel="Vida Saludable"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/R.c5b34048e09f0630a8ae338f6ffa722e?rik=X3X5LH%2b0N7I92A&pid=ImgRaw&r=0" alt="Not Found"><br>
+        <h1>Carreras tecnicas del CETAC 12</h1>
+    </header>
+    <main>
+        <h2 id="ah2"></h2>
+        <form>
+            <fieldset>Elige una carrera</fieldset>
+            <p onclick="seleccionar('lab')" id="lab_ambi"><i class="fa-regular fa-circle"></i>  Laboratorista Ambiental</p>
+            <br>
+            <p onclick="seleccionar('prog')" id="progra"><i class="fa-regular fa-circle"></i>  Programación</p>
+            <br>
+            <p onclick="seleccionar('vid')" id="vid_sal"><i class="fa-regular fa-circle"></i>  Vida Saludable</p>
+            <br>
+            <div id="centrar">
+                <input type="submit" onclick="subir()">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

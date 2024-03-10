@@ -1,0 +1,90 @@
+body{
+    background: url(https://th.bing.com/th/id/R.7d7509aa4afb08e0c5f63ff582bbb0d1?rik=BBcXEcFpA%2boE3w&pid=ImgRaw&r=0) no-repeat;
+    background-size: 100% 100vh;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+img{
+    float: inline-end;
+    width: 20%;
+    z-index: -1;
+    filter: drop-shadow( 0px 0px 3px #fff);
+}
+
+form{
+    position: relative;
+    left: 10%;
+    border: #fff 4px solid;
+    width: 80%;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+form fieldset{
+    text-align: center;
+    border: none;
+    font-size: xx-large;
+}
+
+form *{
+    text-align: left;
+    margin-top: 10px;
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#centrar{
+    text-align: center;
+    margin: 3% 0 2% 0;
+}
+
+#centrar input{
+    position: relative;
+    background-color: #818181;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    border: solid 2px transparent;
+    transition: all 2s ;
+    border-radius: 25px;
+    animation: shake infinite 1.5s linear;
+}
+
+@keyframes shake {
+    0%,20%,100%{
+        left: 0;
+    }
+    30%,50%,70%,90%{
+        left: 5px;
+    }
+    40%,60%,80%{
+        left: -5px;
+    }
+}
+
+#centrar input:hover{
+    border: 2px solid #4b4b4b;
+    color: #d3d3d3;
+    background-color: #000;
+}
+
+p:hover{
+    cursor: pointer;
+}
+
+p{
+    display: inline;
+    margin-top: 20px;
+}
+
+p:nth-child(1){
+    margin-top: 0;
+}
